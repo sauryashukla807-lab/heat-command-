@@ -1,0 +1,6 @@
+{
+  "name": "Chandigarh Heatwave GIS",
+  "description": "Heat Early Warning System (HEWS) & Mortality Surveillance Cockpit for Chandigarh UT with real-time WBGT telemetry, GIS sector risk matrix, and dispatch daemon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

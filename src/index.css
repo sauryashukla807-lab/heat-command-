@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #faf9fd;
+    color: #1b1b1f;
+  }
+}
+
+.font-mono-code {
+  font-family: 'Space Mono', monospace;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 28s linear infinite;
+}
+
+.hazard-stripe {
+  background: repeating-linear-gradient(45deg, #ffe600, #ffe600 10px, #1b1b1f 10px, #1b1b1f 20px);
+}
+
+.hazard-stripe-red {
+  background: repeating-linear-gradient(45deg, #ba002a, #ba002a 10px, #1b1b1f 10px, #1b1b1f 20px);
+}
+
+/* Hard neo-brutalist box shadow utility */
+.brutal-shadow {
+  box-shadow: 4px 4px 0px #1b1b1f;
+}
+
+.brutal-shadow-sm {
+  box-shadow: 2px 2px 0px #1b1b1f;
+}
+
+.brutal-shadow-lg {
+  box-shadow: 6px 6px 0px #1b1b1f;
+}
+
+.brutal-shadow-yellow {
+  box-shadow: 4px 4px 0px #ffe600;
+}
+
+/* Hide scrollbar for tactical panels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom leaflet popup overrides */
+.leaflet-popup-content-wrapper {
+  border-radius: 0 !important;
+  border: 2px solid #1b1b1f !important;
+  box-shadow: 4px 4px 0px #1b1b1f !important;
+  padding: 0 !important;
+  background: #ffffff !important;
+}
+.leaflet-popup-content {
+  margin: 8px 12px !important;
+  font-family: 'Space Mono', monospace !important;
+  font-size: 11px !important;
+}
